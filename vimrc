@@ -8,7 +8,10 @@ set wildmenu
 set hlsearch
 set incsearch
 set ignorecase
-
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
 map s <nop>
 map S :w<CR>
 map Q :q<CR>
@@ -51,3 +54,7 @@ filetype plugin indent on    " required
 
 " ===========================================
 color snazzy
+
+let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
+
+let g:ycm_confirm_extra_conf = 0
